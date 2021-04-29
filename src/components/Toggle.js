@@ -1,10 +1,5 @@
-import { useEffect, useState } from "react";
 import {
     motion,
-    useViewportScroll,
-    useSpring,
-    useTransform,
-    AnimatePresence
 } from "framer-motion";
 import styled from 'styled-components';
 
