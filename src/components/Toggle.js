@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import {
     motion,
 } from "framer-motion";
@@ -18,13 +19,32 @@ const ToggleContainer = styled(motion.div)`
     flex-direction: column;
 `;
 
+const ToggleBackground = styled(motion.div)`
+
+    width: 160px;
+    height: 80px;
+    background-color: rgba(255, 255, 255, 0.4);
+    display: flex;
+    justify-content: flex-start;
+    border-radius: 50px;
+    padding: 10px;
+    cursor: pointer;
+`;
+
+const ToggleCircle = styled(motion.div)`
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    border-radius: 40px;
+`;
 
 export const Toggle = () => {
 
-
     return (
         <ToggleContainer>
-                Place holder
+            <ToggleBackground>
+                <ToggleCircle/>
+            </ToggleBackground>
         </ToggleContainer>
     )
 }
