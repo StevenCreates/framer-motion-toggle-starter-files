@@ -1,14 +1,13 @@
-# framer-motion-toggle COMING SOON!
+# framer-motion-toggle-starter-files
 
 ## Simple to get started
 - Follow Me
 - Star Repo
 - Clone Repo
 - Npm install
-- See Toggle
+- See Toggle Without Animation
 
 ### Resources
-
 - Article/Guide
 - Comming Soon
 

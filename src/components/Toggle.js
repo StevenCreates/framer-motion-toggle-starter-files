@@ -39,11 +39,31 @@ const ToggleCircle = styled(motion.div)`
 `;
 
 export const Toggle = () => {
+    const [toggleDirection, setToggleDirection] = useState(0)
+    const toggleOn = () => {
+        setToggleDirection(toggleDirection === 0 ? 80 : 0)
+    }
+
 
     return (
         <ToggleContainer>
-            <ToggleBackground>
-                <ToggleCircle/>
+            <ToggleBackground
+                onTap={toggleOn}
+            >
+                <ToggleCircle 
+                    onTap={toggleOn}
+                    animate={{
+                        x: toggleDirection
+                    }}
+                    transition={{
+                        type: "spring",
+                        stiffness: 700,
+                        damping: 30
+                    }}
+                    style={{
+                        background: toggleDirection ? "#CE4993" : "#EEAF61"
+                    }}
+                />
             </ToggleBackground>
         </ToggleContainer>
     )
